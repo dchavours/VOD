@@ -97,7 +97,7 @@ class List extends Component {
         <div className="row">{this.renderForm()}</div>
         <div className="row">{this.renderToDo()}</div>
         <div className="fixed-action-btn">
-          {/* <button
+          <button
             type="button"
             onClick={() => this.setState({ showForm: !showForm })}
             className="btn-floating btn-large black darken-4"
@@ -107,7 +107,7 @@ class List extends Component {
             ) : (
               <i className="large material-icons">+</i>
             )}
-          </button> */}
+          </button> 
         </div>
       </div>
     );
