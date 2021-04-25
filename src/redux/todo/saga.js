@@ -51,6 +51,9 @@ function* fetchToDoRequestHandler() {
 }
 
 
+// Change this to removeValue() and that value being 
+// the VideoJS logic and asset.
+
 
 function completeToDo(payload) {
   const nameRef = todoRef.child(payload).child('viewed').ref;

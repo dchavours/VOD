@@ -11,7 +11,7 @@ import ModalDownload from "../../../components/downloads/Modal";
 
 
 import '../ListItem/ListItem.css';
-
+// For some reason number 15 is not firing. 
 const { completeToDoRequest } = listActions;
 const { showModalRequest } = modalActions;
 
@@ -57,7 +57,11 @@ class ListItem extends Component {
             onKeyPress={() => {}}
           >
            
-            <i className="done-icon">Done</i>
+            <i className="done-icon">Delete</i>
+            <br/>
+            
+
+
           </span>
 		  <br />
 
