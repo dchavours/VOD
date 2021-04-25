@@ -8,6 +8,7 @@ import Button from "../ListModal/ButtonModal/Button/Button";
 
 import ModalDownload from "../../../components/downloads/Modal";
 
+import VideoAsset from "../../VideoAsset/VideoAsset";
 
 
 import '../ListItem/ListItem.css';
@@ -57,15 +58,16 @@ class ListItem extends Component {
             onKeyPress={() => {}}
           >
            
-            <i className="done-icon">Delete</i>
+            <i className="done-icon">Elapse Time</i>
             <br/>
-            
+            {/* <VideoAsset/> */}
 
 
           </span>
 		  <br />
+      <br />
 
-        <Button text="View In Detail" key={this.todo} onClick={this.handleOpen("download")}/>
+        <Button text="Watch Movie" key={this.todo} onClick={this.handleOpen("download")}/>
 
 
 

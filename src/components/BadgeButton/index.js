@@ -13,8 +13,14 @@ const BadgeButton = props => {
   return (
     <div>
       <Button label="ll">
-      <p>Recent Enquiries</p>
-        <Badge>{count}</Badge>
+      <p>Time Remaining</p>
+        {/* Replace the below line with seconds from a timer */}
+        {/* <Badge>{count}</Badge> */}
+        <Badge>
+          47 Hours
+          </Badge> 
+
+
       </Button>
     </div>
   );

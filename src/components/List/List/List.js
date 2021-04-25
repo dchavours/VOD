@@ -41,7 +41,7 @@ class List extends Component {
         <form onSubmit={this.formSubmit}>
           <div className="input-field">
             <label id="formLabel" htmlFor="toDoNext">
-              What Next?
+              How Long Would You Like Your Video To Last?
             </label>
             <input
               id="toDoNext"
@@ -67,7 +67,13 @@ class List extends Component {
     }
     return (
       <div className="col s10 offset-s1 center-align">
-        <h4>You have no more things ToDo!</h4>
+        <h4>You have ran out of time for the video. Click the link below to renew access.</h4>
+
+        <br/>
+
+        <h4><a href="https://www.paypal.com/us/home">Link To Paypal</a></h4>
+
+
       </div>
     );
   }
@@ -91,7 +97,7 @@ class List extends Component {
         <div className="row">{this.renderForm()}</div>
         <div className="row">{this.renderToDo()}</div>
         <div className="fixed-action-btn">
-          <button
+          {/* <button
             type="button"
             onClick={() => this.setState({ showForm: !showForm })}
             className="btn-floating btn-large black darken-4"
@@ -101,7 +107,7 @@ class List extends Component {
             ) : (
               <i className="large material-icons">+</i>
             )}
-          </button>
+          </button> */}
         </div>
       </div>
     );
