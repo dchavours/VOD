@@ -54,14 +54,19 @@ function* fetchToDoRequestHandler() {
 // Change this to removeValue() and that value being 
 // the VideoJS logic and asset.
 
+//  const deleteNode = todoRef.remove();
+
 
 function completeToDo(payload) {
-  const nameRef = todoRef.child(payload).child('viewed').ref;
+
+  const nameRef = todoRef.child(payload).ref;
   return nameRef
-    .set('true')
+    .remove()
     .then(() => 'SUCCESS')
     .catch(() => 'FAILED');
 }
+
+
 
 function* completeToDoRequestHandler({ payload }) {
   try {
